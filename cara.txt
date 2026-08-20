@@ -1,0 +1,79 @@
+================================================================================
+PANDUAN LANGKAH-LANGKAH HOSTING APLIKASI WEB SMK DIPONEGORO CIPARI
+================================================================================
+
+Aplikasi ini berbasis Static Web (HTML, CSS, JavaScript) sehingga SANGAT MUDAH 
+dan GRATIS untuk di-online-kan (hosting). 
+
+Berikut adalah 4 Pilihan Cara Hosting dari yang Paling Mudah:
+
+--------------------------------------------------------------------------------
+PILIHAN 1: MENGGUNAKAN NETLIFY (Paling Cepat & Gratis - Tanpa Coding)
+--------------------------------------------------------------------------------
+1. Buka website https://www.netlify.com di browser.
+2. Buat akun baru (Sign Up) atau Login jika sudah punya akun.
+3. Setelah masuk ke Dashboard Netlify, klik menu "Sites".
+4. Cari area bertuliskan "Drag and drop your site folder here".
+5. Buka File Explorer di komputer Anda, lalu tarik (drag & drop) folder "a-web" 
+   langsung ke area tersebut di browser.
+6. Tunggu proses upload sekitar 5-10 detik.
+7. Selesai! Website Anda langsung ONLINE. 
+8. Anda bisa mengedit nama link/domain gratisnya di "Site settings" -> "Change site name" 
+   (Contoh: smk-diponegoro-cipari.netlify.app).
+
+
+--------------------------------------------------------------------------------
+PILIHAN 2: MENGGUNAKAN GITHUB PAGES (Gratis & Permanen)
+--------------------------------------------------------------------------------
+1. Buka https://github.com dan login ke akun Anda.
+2. Buat Repository baru:
+   - Klik tombol "+" di kanan atas -> Pilih "New repository".
+   - Beri nama repository, contoh: "smk-diponegoro-cipari".
+   - Pilih "Public", lalu klik "Create repository".
+3. Upload File:
+   - Di halaman repository baru, klik "uploading an existing file".
+   - Pilih seluruh file di dalam folder a-web (index.html, styles.css, app.js, 
+     initialData.js, README.md).
+   - Klik "Commit changes".
+4. Aktifkan Hosting:
+   - Masuk ke tab "Settings" di bagian atas repository.
+   - Di menu sebelah kiri, pilih "Pages".
+   - Pada bagian "Branch", ubah "None" menjadi "main" (atau "master"), lalu klik "Save".
+5. Tunggu 1-2 menit. Website Anda akan aktif di link:
+   https://username_github_anda.github.io/smk-diponegoro-cipari/
+
+
+--------------------------------------------------------------------------------
+PILIHAN 3: MENGGUNAKAN VERCEL (Gratis & Sangat Cepat)
+--------------------------------------------------------------------------------
+1. Buka https://vercel.com dan login.
+2. Klik tombol "Add New..." -> Pilih "Project".
+3. Upload folder "a-web" atau sambungkan dengan akun GitHub Anda.
+4. Klik "Deploy".
+5. Dalam beberapa detik aplikasi online di domain gratis seperti:
+   smk-diponegoro-cipari.vercel.app
+
+
+--------------------------------------------------------------------------------
+PILIHAN 4: MENGGUNAKAN HOSTING CPANEL / WEBSITES SEKOLAH RESMI (.sch.id)
+--------------------------------------------------------------------------------
+Jika sekolah sudah memiliki domain resmi (contoh: smkdiponegorocipari.sch.id):
+
+1. Buka cPanel hosting sekolah Anda (biasanya: domainanda.sch.id/cpanel).
+2. Masukkan Username & Password cPanel.
+3. Buka menu "File Manager".
+4. Masuk ke dalam folder "public_html".
+5. Upload seluruh file dari folder a-web:
+   - index.html
+   - styles.css
+   - app.js
+   - initialData.js
+6. Pastikan file "index.html" berada langsung di dalam folder public_html.
+7. Buka browser dan ketik alamat website sekolah Anda. Aplikasi langsung berjalan!
+
+================================================================================
+Catatan Penting:
+ Data sekolah (Siswa, Guru, SPP, dll) tersimpan di browser via LocalStorage. 
+ Apabila Anda menggunakan fitur "Ekspor Data JSON" di menu Pengaturan, 
+ Anda dapat mengunduh backup data dan mengimpornya kembali ke website yang sudah di-hosting.
+================================================================================
